@@ -15,3 +15,11 @@ yum install puppet -y
 # install wget module for grabbing files from github
 #
 /opt/puppetlabs/bin/puppet module install maestrodev-wget
+#
+# grab the nginx.pp manifest
+#
+wget -P /tmp https://raw.githubusercontent.com/canussie/puppet/master/nginx.pp
+#
+# run the puppet agent against the manifest
+#
+/opt/puppetlabs/bin/puppet apply 
