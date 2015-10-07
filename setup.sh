@@ -22,4 +22,5 @@ wget -P /tmp https://raw.githubusercontent.com/canussie/puppet/master/nginx.pp
 #
 # run the puppet agent against the manifest
 #
+#
 /opt/puppetlabs/bin/puppet apply /tmp/nginx.pp
